@@ -1,4 +1,4 @@
-[![Project Screenshot](src/assets/Screenshot 2025-09-20 183309.png)](https://save-notes-web.netlify.app/)
+[![Project Screenshot](src/assets/Screenshot.png)](https://save-notes-web.netlify.app/)
 
 Check out the live project [here](https://save-notes-web.netlify.app/)!
 
