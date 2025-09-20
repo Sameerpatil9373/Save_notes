@@ -1,6 +1,6 @@
-Here is the URL to see Project Live:-
+[![Project Screenshot](assets/note.jpg)](https://save-notes-web.netlify.app/)
 
-Url:-https://save-notes-web.netlify.app/
+Check out the live project [here](https://save-notes-web.netlify.app/)!
 
 
 
