@@ -45,16 +45,21 @@ export const notesReducer = (state, { type, payload }) => {
       };
 
     case "DELETE":
+      const noteToDelete = state.notes.find((n) => n.id === payload);
+      console.log("Deleting note:", noteToDelete); 
+      console.log("Current bin:", state.bin); 
+      
       return {
         ...state,
-        bin: [...state.bin, state.notes.find((n) => n.id === payload)],
+        bin: [...state.bin, noteToDelete],
         notes: state.notes.filter((n) => n.id !== payload),
       };
 
     case "RESTORE_FROM_BIN":
+      const noteToRestore = state.bin.find((n) => n.id === payload);
       return {
         ...state,
-        notes: [...state.notes, state.bin.find((n) => n.id === payload)],
+        notes: [...state.notes, noteToRestore],
         bin: state.bin.filter((n) => n.id !== payload),
       };
 
@@ -64,10 +69,21 @@ export const notesReducer = (state, { type, payload }) => {
         bin: state.bin.filter((n) => n.id !== payload),
       };
 
+ 
+    case "LOAD_NOTES":
+      return {
+        ...state,
+        notes: payload,
+      };
+
+    case "LOAD_BIN":
+      return {
+        ...state,
+        bin: payload,
+      };
+
     default:
       return state;
   }
 };
-
-
 

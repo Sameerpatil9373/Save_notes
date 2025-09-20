@@ -25,7 +25,7 @@ export const Bin = () => {
                   text={text}
                   isPinned={isPinned}
                   isImportant={isImportant}
-                  isBinPage={true} // disable pin/star + show restore/delete_forever
+                  isBinPage={true} 
                 />
               ))}
             </div>

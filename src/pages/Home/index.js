@@ -30,7 +30,7 @@ export const Home = () => {
     });
   };
 
-  // ✅ Separate pinned & other notes
+ 
   const pinnedNotes = notes?.length > 0 && notes.filter(({ isPinned }) => isPinned);
   const otherNotes = notes?.length > 0 && notes.filter(({ isPinned }) => !isPinned);
 

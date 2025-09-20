@@ -15,7 +15,7 @@ export const NotesCard = ({
     <div className="w-64 border border-neutral-300 p-3 rounded-md shadow-sm relative bg-white">
       {/* Header */}
       <div className="flex justify-between items-center">
-        <p className="font-medium">{title}</p>
+        <p className="font-medium flex-1">{title}</p>
 
         {/* Hide Pin in Bin + Important pages */}
         {!isBinPage && !isImportantPage && (

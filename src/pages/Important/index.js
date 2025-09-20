@@ -26,7 +26,7 @@ export const Important = () => {
                   text={text}
                   isPinned={isPinned}
                   isImportant={isImportant}
-                  isImportantPage={true} // ✅ hides pin
+                  isImportantPage={true} 
                 />
               ))}
             </div>
